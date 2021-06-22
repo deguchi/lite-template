@@ -14,6 +14,7 @@ export default defineConfig({
   optimizeDeps: {
   },
   build: {
+    outDir: 'build',
     rollupOptions: {
       input: {
         // need a better way to template
