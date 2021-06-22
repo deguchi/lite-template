@@ -10,18 +10,23 @@ const locals = {}
 export default defineConfig({
   plugins: [pugPlugin(options, locals)],
   server: { port: 3000 },
-  publicDir: 'assets',
+  // publicDir: 'assets',
   optimizeDeps: {
   },
   build: {
     outDir: 'build',
     rollupOptions: {
-      input: {
+      // input: {
         // need a better way to template
-        main: resolve(__dirname, 'index.html'),
+        // main: resolve(__dirname, 'index.html'),
         // page: resolve(__dirname, 'pages/page.html'),
         // page2: resolve(__dirname, 'pages/page2.html'),
-      },
+      // },
+      output: {
+        entryFileNames: `assets/[name].js`,
+        chunkFileNames: `assets/[name].js`,
+        assetFileNames: `assets/[name].[ext]`
+      }
     },
   },
 })

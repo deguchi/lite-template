@@ -6,6 +6,8 @@
     "serve": "vite preview --open"
   },
   "devDependencies": {
-    "vite": "^2.3.7"
+    "sass": "^1.35.1",
+    "vite": "^2.3.7",
+    "vite-plugin-pug": "^0.3.0"
   }
 }
