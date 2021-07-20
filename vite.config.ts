@@ -1,16 +1,14 @@
 import { defineConfig } from 'vite'
-import pugPlugin from "vite-plugin-pug"
 const { resolve } = require('path')
 
-const options = { pretty: true } // FIXME: pug pretty is deprecated!
 // const locals = { name: "My Pug" }
 const locals = {}
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [pugPlugin(options, locals)],
+  plugins: [],
   server: { port: 3000 },
-  // publicDir: 'assets',
+  publicDir: './src/assets/',
   optimizeDeps: {
   },
   build: {
