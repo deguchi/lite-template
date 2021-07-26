@@ -2,14 +2,14 @@
 
 https://vitejs.dev/
 
-Vite+Pug+Sassの開発環境
+Vite+Sassの開発環境
 
 
 ## 開発
 
 ```
 npm install
-npm run dev
+npm start
 ```
 
 http://localhost:3000/
