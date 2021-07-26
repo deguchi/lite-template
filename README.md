@@ -3,6 +3,7 @@
 https://vitejs.dev/
 
 Vite+Sassの開発環境
+CSSのGridはIE11対応
 
 
 ## 開発
