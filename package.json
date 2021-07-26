@@ -6,6 +6,7 @@
     "serve": "vite preview --open"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.1",
     "sass": "^1.35.1",
     "vite": "^2.3.7",
     "vite-plugin-pug": "^0.3.0"

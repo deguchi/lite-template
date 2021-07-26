@@ -1,0 +1,37 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html, body
+    width: 100%
+    height: 100%
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans JP", "ＭＳ Ｐゴシック", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+
+
+
+main
+    article
+        section.grid1
+            display: grid
+            grid-template-rows: 1fr 100px
+            grid-template-columns: 150px 1fr
+            grid-template-areas: "areaA areaB" "areaA areaC"
+            height: 100vh
+            gap: 5px
+            #itemA
+                grid-area: areaA
+                background: #f88
+                padding: 10px
+                align-self: strech
+                justify-self: stretch
+            #itemB
+                grid-area: areaB
+                background: #8f8
+                padding: 10px
+                order: 2
+            #itemC
+                grid-area: areaC
+                background: #88f
+                padding: 10px
+                order: 1

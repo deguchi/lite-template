@@ -8,7 +8,7 @@ const locals = {}
 export default defineConfig({
   plugins: [],
   server: { port: 3000 },
-  publicDir: './src/assets/',
+  publicDir: './src/',
   optimizeDeps: {
   },
   build: {
