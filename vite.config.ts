@@ -14,12 +14,13 @@ export default defineConfig({
   build: {
     outDir: 'build',
     rollupOptions: {
-      // input: {
+      input: {
         // need a better way to template
-        // main: resolve(__dirname, 'index.html'),
-        // page: resolve(__dirname, 'pages/page.html'),
+        main: resolve(__dirname, 'index.html'),
+        page: resolve(__dirname, 'pages/index.html'),
         // page2: resolve(__dirname, 'pages/page2.html'),
-      // },
+      },
+      // ファイル名にハッシュを付けない
       output: {
         entryFileNames: `assets/[name].js`,
         chunkFileNames: `assets/[name].js`,
